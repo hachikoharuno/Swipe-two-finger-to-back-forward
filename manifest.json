@@ -1,0 +1,35 @@
+{
+  "manifest_version": 2,
+  "name": "Swipe two finger to back/forward",
+  "version": "1",
+  "description": "This extension enables two-finger swipe like in safari. ",
+  "icons": {
+    "48": "icons/icon48.png",
+    "96": "icons/icon96.png"
+  },
+  "content_scripts": [{
+    "matches": [
+      "<all_urls>"
+    ],
+    "js": [
+      "touch.js"
+    ]
+
+  }],
+  "background": {
+    "scripts": [
+      "background-script.js"
+    ]
+  },
+  "options_ui": {
+    "page": "options/options.html",
+    "browser_style": true
+  },
+  "permissions": [
+    "storage"
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+    }
+  }
+}
