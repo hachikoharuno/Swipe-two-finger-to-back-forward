@@ -1,0 +1,11 @@
+body {
+  padding: 15px;
+}
+
+div {
+  padding: 15px;
+}
+
+.slider {
+  direction: rtl;
+}
